@@ -35,7 +35,7 @@
  ;; If there is more than one, they won't work right.
  '(package-selected-packages
    (quote
-    (flycheck-inline flycheck-rust company racer rust-mode projectile color-theme helm))))
+    (flycheck-inline flycheck-rust company racer rust-mode projectile helm))))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
@@ -47,9 +47,7 @@
 ;;;;;; INITING THE PACKAGES       ;;;;;;;;;;;;;;;
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;; setup color theme
-(require 'color-theme)
 (add-to-list 'custom-theme-load-path "~/.emacs.d/themes/")
-(color-theme-initialize)
 (load-theme 'zenburn t)
 
 ;; setup helm
